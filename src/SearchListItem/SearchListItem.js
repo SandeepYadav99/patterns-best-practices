@@ -21,7 +21,7 @@ const SearchListItem = ({ items, keyFuncItem, children }) => {
   return (
     <div>
       <input type="search" placeholder="Search" className="input-filed" onChange={changeHandler} />
-      <ul>
+      <ul className="list">
         {filterResult?.map((item) => (
           <li key={keyFuncItem(item)}>{children(item)}</li>
         ))}

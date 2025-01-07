@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion/Accordion";
 import SearchListItem from "./SearchListItem/SearchListItem";
+import styles from "./App.module.css"
 import Place from "./Place";
 
 const App = () => {
@@ -10,9 +11,9 @@ const App = () => {
     { id: 3, title: "Think wik", description: "This is my ThinkWik" },
   ];
   return (
-    <main>
+    <main className={styles.main}>
       
-      <section className={"main"}>
+      <section className="main">
         <Accordion className={"accordion"}>
           <Accordion.Item className={"accordionItem"} id={"experience"}>
             <Accordion.Title>We got 20 years of experience</Accordion.Title>
@@ -43,12 +44,12 @@ const App = () => {
         </Accordion>
       </section>
 
-      <section className="main border">
+      <section className="input-section border">
         <SearchListItem items={PLACES} keyFuncItem={(item) => item.id}>
           {(item) => <Place item={item} />}
         </SearchListItem>
       </section>
-      <section className="main border">
+      <section className=" border">
         <SearchListItem items={["item1", "item2"]} keyFuncItem={(item) => item}>
           {(item) => <h3>{item}</h3>}
         </SearchListItem>
