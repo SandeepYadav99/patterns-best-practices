@@ -1,6 +1,43 @@
 body {
   margin: 0;
-
+  background-color: #1e2130;
+}
+.main {
+  width: 95%;
+  max-width: 55rem;
+  padding: 20px;
+  text-align: justify;
+  margin: 2% auto;
+  border: 1px solid #5d6273;
+}
+.border {
+  border: none !important;
+}
+.accordion {
+  list-style: none;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 2rem 0;
+  margin: 0;
+  padding: 0;
+}
+.accordion h2 {
+  color: wheat;
+}
+p {
+  color: #fff;
+}
+.open {
+  display: block;
+}
+.close {
+  display: none;
+}
+.accordionItem {
+  background-color: #1e2130;
 }
 
-
+.input-filed {
+  padding: 7px 10px;
+  border: none;
+}
