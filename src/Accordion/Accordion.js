@@ -14,10 +14,10 @@ export const useAccordionContext = () => {
 };
 
 const Accordion = ({ children, className }) => {
-  const [openItemId, setOpenItemId] = useState();
+  const [openItemId, setOpenItemId] = useState(null);
 
   const toggleItem = (id) => {
-    setOpenItemId((prevId)=> prevId === id ? null : id)
+    setOpenItemId((prevId) => (prevId === id ? null : id));
   };
 
   const contextValue = {
